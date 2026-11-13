@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       BASE_URL: ${{ secrets.BASE_URL }}
       E2E_USERNAME: ${{ secrets.E2E_USERNAME }}
