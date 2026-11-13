@@ -1,0 +1,25 @@
+{
+  "name": "todo-app-qa-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --project=auth --project=folders --project=todos",
+    "test:auth": "playwright test --project=auth",
+    "test:folders": "playwright test --project=folders",
+    "test:todos": "playwright test --project=todos",
+    "test:settings": "playwright test --project=settings",
+    "report": "playwright show-report"
+  },
+  "keywords": ["qa", "test-automation", "playwright", "typescript", "e2e", "page-object-model", "portfolio"],
+  "author": "Lautaro Costa Peralta",
+  "license": "ISC",
+  "description": "QA portfolio with manual use cases, bug reports, and Playwright end-to-end tests for the Ensolvers to-do application.",
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2",
+    "typescript": "^6.0.3"
+  }
+}
